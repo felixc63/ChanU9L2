@@ -1,21 +1,16 @@
-public class Cat extends Animal{
-    private boolean hasPlayedWith;
+public class Phoenix extends Monster {
+    private int intensity;
 
-    public Cat(String name, int age, boolean vaccinated, String color, boolean hasPlayedWith){
-        super(name,age,vaccinated,color);
-        this.hasPlayedWith = hasPlayedWith;
+    public Phoenix(String name, String type, int intensity){
+        super(name,type);
+        this.intensity = intensity;
     }
 
-    public boolean isHasPlayedWith(){
-        return hasPlayedWith;
+    public int getIntensity(){
+        return intensity;
     }
 
-    public void play(){
-        hasPlayedWith = true;
-        System.out.println("I'm having fun");
-    }
-
-    public void meow(){
-        System.out.println("MEOW!");
+    public void breatheFire(){
+        System.out.println("Feel the Flame!");
     }
 }

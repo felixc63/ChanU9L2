@@ -1,40 +1,20 @@
-public class Animal {
+public class Monster {
     private String name;
-    private int age;
-    private boolean vaccinated;
-    private String color;
-    public Animal(String name, int age, boolean vaccinated, String color){
+    private String type;
+    public Monster(String name, String type){
         this.name = name;
-        this.age = age;
-        this.vaccinated = vaccinated;
-        this.color = color;
+        this.type = type;
     }
 
     public String getName(){
         return name;
     }
 
-    public int getAge(){
-        return age;
+    public String getType(){
+        return type;
     }
 
-    public boolean isVaccinated(){
-        return vaccinated;
-    }
-
-    public String getColor(){
-        return color;
-    }
-
-    public void adopt(){
-        System.out.println("I have been adopted");
-    }
-
-    public void feed(){
-        System.out.println("Yummy");
-    }
-
-    public void pickUp(){
-        System.out.println("I have been picked up");
+    public void roar(){
+        System.out.println("RAHHHHH");
     }
 }

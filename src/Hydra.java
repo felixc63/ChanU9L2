@@ -1,21 +1,16 @@
-public class Dog extends Animal{
-    private boolean hasBeenWalked;
+public class Hydra extends Monster {
+    private int headCount;
 
-    public Dog(String name, int age, boolean vaccinated, String color, boolean hasBeenWalked){
-        super(name,age,vaccinated,color);
-        this.hasBeenWalked = hasBeenWalked;
+    public Hydra(String name, String type, int headCount){
+        super(name,type);
+        this.headCount = headCount;
     }
 
-    public boolean isHasBeenWalked(){
-        return hasBeenWalked;
+    public int getHeadCount(){
+        return headCount;
     }
 
-    public void walk(){
-        hasBeenWalked = true;
-        System.out.println("I'm getting walked");
-    }
-
-    public void bark(){
-        System.out.println("RUFF!");
+    public void breatheWater(){
+        System.out.println("Get Soaked!");
     }
 }
